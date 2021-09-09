@@ -6,6 +6,9 @@ authors = ["Siddhartha <sidmontu@gmail.com>"]
 
 [tool.poetry.dependencies]
 python = "^3.8"
+attr = "^0.3.1"
+typer = "^0.4.0"
+loguru = "^0.5.3"
 
 [tool.poetry.dev-dependencies]
 black = "^21.7b0"
@@ -17,6 +20,9 @@ flake8 = "^3.9.2"
 flake8-bugbear = "^21.4.3"
 pre-commit = "^2.14.0"
 pytest-mock = "^3.6.1"
+
+[tool.poetry.scripts]
+scanner = "bin.scanner_bin:_main"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
