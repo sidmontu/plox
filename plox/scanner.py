@@ -7,12 +7,16 @@ from typing import List
 
 import attr
 
+# from plox.error_handler import report
+
 
 @attr.s
 class Scanner:
     """
     Scanner class that encapsulates all related methods.
     """
+
+    _had_error = attr.ib(default=False)
 
     def scan_tokens(self, src: str) -> List[str]:
         """
