@@ -17,7 +17,7 @@ When you first clone the repository to your local machine, you *must* install
 the pre-commit hooks so that all the automation checks run on `git commit`. You
 can do so by running:
 
-`poetry run pre-commit install`
+`$ poetry run pre-commit install`
 
 ## Folder Organization
 
